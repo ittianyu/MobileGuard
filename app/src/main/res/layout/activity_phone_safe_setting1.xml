@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_phone_safe_setting1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ittianyu.mobileguard.activity.PhoneSafeSetting1Activity">
+
+    <TextView
+        android:id="@+id/tv_safe_phone_tips"
+        android:textColor="@android:color/black"
+        android:text="@string/please_input_safe_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_safe_phone_number"
+        android:hint="@string/_11_phone_number"
+        android:inputType="phone"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/tv_safe_phone_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_select_from_contact"
+        android:text="@string/select_from_contact"
+        android:layout_below="@+id/et_safe_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_alignParentBottom="true"
+        android:text="@string/setting_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#164185</color>
+    <color name="colorPrimaryDark">#4076B2</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_overlay">#66000000</color>
+    <!--custom color-->
+    <color name="black22">#22000000</color>
+    <color name="black55">#55000000</color>
+    <color name="black99">#99000000</color>
+    <color name="blackcc">#cc000000</color>
+
+    <color name="whiteee">#eeeeeeee</color>
+    <color name="whitebb">#bbeeeeee</color>
+    <color name="white55">#55eeeeee</color>
+
+    <color name="item_checked_blue">#99D6EB</color>
+    <color name="blue">#448AFF</color>
+    <color name="mainStart">#164185</color>
+    <color name="mainEnd">#4076B2</color>
+
+
+</resources>

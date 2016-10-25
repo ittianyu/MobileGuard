@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_software_manager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ittianyu.mobileguard.activity.SoftwareManagerActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_free_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_rom_free_sapce"
+            android:maxLines="1"
+            android:layout_width="0dp"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rom_free_space" />
+
+        <TextView
+            android:id="@+id/tv_sd_card_free_sapce"
+            android:maxLines="1"
+            android:layout_width="0dp"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sd_card_free_space" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_free_space"></ListView>
+
+    <include
+        android:id="@+id/tv_type_label"
+        layout="@layout/item_software_manager_type_label_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_free_space"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

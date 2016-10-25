@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="cb_pref_auto_update"
+        android:summary="@string/summary_auto_update"
+        android:title="@string/auto_update" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="cb_pref_blacklist_intercept"
+        android:summary="@string/summary_blacklist_intercept"
+        android:title="@string/title_blacklist_intercept" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="cb_pref_show_incoming_location"
+        android:summary="@string/summary_show_incoming_location"
+        android:title="@string/title_show_incoming_location" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="cb_pref_app_lock"
+        android:summary="@string/summary_app_lock"
+        android:title="@string/app_lock" />
+
+</PreferenceScreen>

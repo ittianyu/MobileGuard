@@ -1,0 +1,11 @@
+<resources>
+    <declare-styleable name="SeparationLineGridView">
+        <attr name="lineMarginLeft" format="dimension" />
+        <attr name="lineMarginRight" format="dimension" />
+        <attr name="lineMarginTop" format="dimension" />
+        <attr name="lineMarginBottom" format="dimension" />
+        <attr name="lineColor" format="color" />
+        <attr name="lineSize" format="dimension" />
+
+    </declare-styleable>
+</resources>

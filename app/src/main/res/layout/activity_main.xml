@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_main_activity_color"
+    android:orientation="vertical"
+    tools:context="com.ittianyu.mobileguard.activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:src="@drawable/ic_circle_inner" />
+
+        <RelativeLayout
+            android:id="@+id/rl_circle"
+            android:layout_centerInParent="true"
+            android:scaleX="0.9"
+            android:scaleY="0.9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_circle_outer" />
+
+            <ImageView
+                android:id="@+id/iv_light_effect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_light_effect" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_ram_use_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="56sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/tv_ram_use_rate"
+            android:layout_toRightOf="@id/tv_ram_use_rate"
+            android:text="%"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.ittianyu.mobileguard.view.SeparationLineGridView
+            android:id="@+id/gv_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:listSelector="@drawable/selector_gv_menu"
+            android:numColumns="3"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_twice"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/activity_vertical_margin"
+            app:lineColor="@color/white55"
+            app:lineMarginBottom="@dimen/activity_vertical_margin"
+            app:lineMarginLeft="@dimen/activity_horizontal_margin"
+            app:lineMarginRight="@dimen/activity_horizontal_margin"
+            app:lineMarginTop="@dimen/activity_vertical_margin"
+            app:lineSize="0.6dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

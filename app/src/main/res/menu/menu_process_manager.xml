@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/m_kill_process"
+        android:title="@string/kill_process"
+        android:enabled="false"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/m_select_all"
+        android:title="@string/select_all"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/m_cancel_all"
+        android:title="@string/cancel_all"
+        app:showAsAction="never" />
+
+</menu>
