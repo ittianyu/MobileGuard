@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="cb_pref_phone_safe"
+        android:title="@string/phone_safe_service" />
+    <Preference
+        android:dependency="cb_pref_phone_safe"
+        android:key="pref_change_safe_phone"
+        android:summary="@string/current_safe_phone_number"
+        android:title="@string/change_safe_phone_number">
+        <intent android:action="com.ittianyu.mobileguard.activity.PhoneSafeSetting1Activity" />
+    </Preference>
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:dependency="cb_pref_phone_safe"
+        android:key="cb_pref_bind_sim"
+        android:summary="@string/bind_sim_summary"
+        android:title="@string/bind_sim" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:dependency="cb_pref_phone_safe"
+        android:key="cb_pref_gps_trace"
+        android:summary="@string/summary_gps_trace"
+        android:title="@string/gps_trace" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:dependency="cb_pref_phone_safe"
+        android:key="cb_pref_alarm"
+        android:summary="@string/summary_music_alarm"
+        android:title="@string/music_alarm" />
+    <CheckBoxPreference
+        android:dependency="cb_pref_phone_safe"
+        android:key="cb_pref_device_admin"
+        android:summary="@string/summary_device_admin"
+        android:title="@string/pref_device_admin" />
+
+    <CheckBoxPreference
+        android:dependency="cb_pref_device_admin"
+        android:key="cb_pref_remote_lock_screen"
+        android:summary="@string/summary_remote_lock_screen"
+        android:title="@string/remote_lock_screen" />
+    <CheckBoxPreference
+        android:dependency="cb_pref_device_admin"
+        android:key="cb_pref_remote_wipe_data"
+        android:summary="@string/summary_remote_wipe_data"
+        android:title="@string/remote_wipe_data" />
+
+
+</PreferenceScreen>

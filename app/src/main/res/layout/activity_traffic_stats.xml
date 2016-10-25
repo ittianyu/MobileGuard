@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_traffic_stats"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ittianyu.mobileguard.activity.TrafficStatsActivity">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:paddingBottom="100dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                app:srcCompat="@drawable/ic_total_traffic"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_width="64dp"
+                android:layout_height="64dp" />
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_total_traffic_stats_sum"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/total_traffic_stats_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_total_traffic_stats"
+                    android:text="@string/traffic_stats_upload_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="4dp"
+                app:srcCompat="@drawable/ic_mobile_traffic"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_width="56dp"
+                android:layout_height="56dp" />
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginLeft="4dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_mobile_traffic_stats_sum"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/mobile_traffic_stats_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_mobile_traffic_stats"
+                    android:text="@string/traffic_stats_upload_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
