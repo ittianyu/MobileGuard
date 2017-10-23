@@ -99,22 +99,6 @@ An *Android* app for managing mobile. And it supports Android 7.0.
 	<br/>
 
 
-## References 来源 ##
-
-This project is coded when I learn course which provided by *itheima*. I adapted it to *Android* 7.0 and beautified it in recent. I use *OkHttp3* to access network.
-The codes are not perfect and haven't use *Rxjava DataBinding Retrofit*. 
-But the codes are fit to read and understand for freshman.
-
-
-本项目是我以前学习黑马安卓课程的时跟着讲师写的，然后前段时间我把此项目适配到了安卓7.0，美化了界面，网络访问部分改成了OkHttp3。
-本项目由于大部分代码是以前学习安卓的时候写的，框架设计方面不太完美，并没有使用Rxjava、DataBinding、Retrofit等现在流行的库。
-但相应的，代码适合新手阅读。
-
-## Thanks 致谢 ##
-
-Thank *itheima*
-感谢黑马程序员
-
 ## License 授权 ##
 
 	MIT License
